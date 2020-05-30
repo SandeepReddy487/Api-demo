@@ -1,0 +1,32 @@
+ 
+ <h1 style="text-align: center; color: orangered;">HTTP Using Get Method</h1>
+ <table border="4">
+    <thead class="thead-dark">
+        <tr>
+        <th>authors</th>
+        <th>country</th>
+        <th>isbn</th>
+        <th>mediaType</th>
+        <th>name</th>
+        <th>numberOfPages</th>
+        <th>publisher</th>
+        <th>released</th>
+        <th>characters</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor = 'let user of getData'>
+        <td>{{user.authors}}</td>
+        <!-- <td>{{user.characters}}</td> -->
+        <td>{{user.country}}</td>
+        <td>{{user.isbn}}</td>
+        <td>{{user.mediaType}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.numberOfPages}}</td> 
+       <td>{{user.publisher}}</td>
+       <td>{{user.released}}</td>
+        <td>{{user.characters}}</td> 
+
+    </tr>
+    </tbody>
+</table> 
